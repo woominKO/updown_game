@@ -12,14 +12,18 @@ function getRandomInt(min, max) {
 let randomNum = getRandomInt(1, 20);
 
 while (true) {
-  let playerNum = prompt('guess number!');
+  let playerNum = prompt(
+    'guess number! 컴퓨터가 고른 1-20까지중의 숫자중 하나를 맞추세요!'
+  );
   playerNum = parseInt(playerNum);
   if (playerNum == randomNum) {
     alert('you are  right!');
     break;
   } else if (playerNum > randomNum) {
     alert('down');
-  } else {
+  } else if (playerNum < randomNum) {
     alert('up');
+  } else {
+    alert('enter number');
   }
 }
