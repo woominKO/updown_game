@@ -26,4 +26,4 @@ function guessNumber() {
   }
 }
 
-window.onload = guessNumber;
+document.addEventListener('DOMContentLoaded', guessNumber);
